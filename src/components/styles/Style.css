@@ -1,0 +1,131 @@
+
+.accordion-button{
+    color: #a1a1a1;
+    font-weight: bold;
+}
+.accordion-item:first-of-type .accordion-button{
+    background: #fff;
+    color: #a1a1a1;
+    font-weight: bold;
+}
+.accordion-button:not(.collapsed){
+    background: #fff;
+    
+}
+.accordion-button:focus{
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.invite_modal .modal-content{
+    width: 78%;
+    margin: 0 auto;
+    @media all and (max-width: 500px){
+        width: 100%;
+    }
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 20px;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 20px;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.carousel-indicators{
+    display: none;
+}
+
+.PhoneInputInput{
+    border: 0px;
+}
+.PhoneInputInput:focus-visible {
+    outline: none;
+}
+
+.form-mobile-img{
+    display: block;
+    @media all and (max-width: 500px){
+        display: none
+    }
+}
+
+.enquireyModal .modal-content{
+    width: 70%;
+    margin: 0 auto;
+    padding: 12px;
+    @media all and (max-width: 500px){
+        width: 100%;
+    }
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.form-label.required:after {
+    content:"*";
+    color:red;
+  }
+
+  /* header css */
+
+.speciality img{
+    width: 12%;
+    @media all and (max-width: 1180px){
+       display: none
+    }
+}
+.careers img{
+    width: 12%;
+    @media all and (max-width: 1180px){
+        width: 5%
+    }
+}
+    @media all and (max-width: 1180px){
+        .speciality{
+            margin-bottom: 10px;
+        }
+     .careers, .search_header, .signup, .login{
+        margin-bottom: 20px;
+    }
+    .login button{
+        width: 110px;
+        border: 1px solid;
+    }
+    .dropdown-item:focus, .dropdown-item:hover{
+        background-color: #f3fbff;
+        border-radius: 10px;
+    }
+    .navbar-nav .dropdown-menu{
+        border: 0;       
+        box-shadow: -1px 0px 8px 1px #d1d1d1;
+        padding: 20px;
+
+    }
+    }
+
+  @media all and (min-width: 1180px){
+    .navbar-nav .dropdown-menu{
+        width: 600px;
+        border: 0;
+        top: 150%;
+        left: -136%;
+        box-shadow: -1px 0px 8px 1px #d1d1d1;
+        padding: 20px;
+    
+      }
+      .dropdown-item:focus, .dropdown-item:hover{
+        background-color: #f3fbff;
+        border-radius: 10px;
+        /* padding: 14px 10px; */
+      }
+      .dropdown-item{
+        padding: 14px 10px;
+        margin-bottom: 10px;
+      } 
+  }
+  

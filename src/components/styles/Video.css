@@ -1,0 +1,21 @@
+.video-overlay{
+    position: absolute;
+    right: 14rem;
+    bottom: 0px;
+    top: 20rem;
+    @media all and (max-width: 500px){
+        right: 10rem;
+        top: 68rem
+    }
+   
+}
+   
+
+.background-video{
+    width: 280px;
+    border-radius: 25px;
+    margin: 0px auto;
+    @media all and (max-width: 500px){
+        width: 100%;
+    }
+}
