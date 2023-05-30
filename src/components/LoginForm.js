@@ -34,7 +34,7 @@ const LoginForm = (props) => {
 
   return (
     <div>
-        <Button onClick={() => setModalShow(true)} variant="light" className="rounded-pill bg-dark px-4 py-2 me-2 fw-bold bg-white">{props.login}</Button>
+        <Button onClick={() => setModalShow(true)} variant="light" className="loginbtn rounded-pill bg-dark px-4 py-2 me-2 fw-bold bg-white">{props.login}</Button>
     
         <Modal
       {...props}

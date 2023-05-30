@@ -8,6 +8,7 @@ import DescriptionCard from './DescriptionCard';
 import CourseDetailsCard from './CourseDetailsCard';
 import CourseDetails from './coursedetails/CourseDetails';
 import CourseaContent from './coursedetails/CourseaContent';
+import VerticalStepBar from './VerticalStepBar';
 
 const Home = () => {
   return (
@@ -18,24 +19,24 @@ const Home = () => {
                 {/* <InviteModal /> */}
                 {/* course details div */}
                 <div>
-                    <CourseaContent />
-                
+                    <CourseaContent />              
                 </div>
+
 
                 {/* key fetaures  */}
                 <div className='row'>
-                    <div className='col-12 col-md-6 col-lg-8'>
-                        
+                    <div className='col-12 col-md-6 col-lg-8'>                        
                         <KeyFeatures />
                         <DescriptionCard />
                        
                         <h1>ciriculum</h1>
+                        <VerticalStepBar />
+
                         <FaqComponent />
                         
                     </div>
                     <div className='col-12 col-md-6 col-lg-4 p-md-0 p-3'>
-                        <CourseDetails />
-                        
+                        <CourseDetails />                        
                         <InviteFriend />
                     </div>
                 </div>

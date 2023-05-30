@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import StickyFooter from './StickyFooter'
 // import FaqComponent from './FaqComponent'
 // import InviteFriend from './InviteFriend'
 
@@ -17,6 +18,7 @@ const WebPage = ({children}) => {
                 </main>
 
             <Footer />
+            <StickyFooter />
         </div>
     </>
   )

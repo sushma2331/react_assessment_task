@@ -8,8 +8,11 @@ const Footer = () => {
               <footer class="bg-grey conatiner-fluid" style={{backgroundColor: 'rgb(26 26 26)'}}>
                 <div class="container py-4">
                 <div class="row py-4">
-                    <div class="col-lg-4 col-md-4 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3" />
+                    <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
+                        <a href="/"> 
                         <img width={'70%'} src="https://web.medvarsity.com/assets/assets/images/footerlogo.png" alt=''></img>
+                        </a>
+                        
                         
 
                     <div class="d-flex mt-5">
@@ -51,16 +54,16 @@ const Footer = () => {
 
                     <li class="mb-2">
                             {/* <a href="/aboutus" class="text-muted">About Us</a> */}
-                            <Link style={{color: '#a7a7a7', textDecoration: 'none'}} to="/" >Privacy Policy</Link>
+                            <Link style={{color: '#a7a7a7', textDecoration: 'none'}} to="/privacypolicy" >Privacy Policy</Link>
                             </li>
                         <li class="mb-2">
-                             <Link style={{color: '#a7a7a7', textDecoration: 'none'}} to="/" >Terms & Conditions</Link>
+                             <Link style={{color: '#a7a7a7', textDecoration: 'none'}} to="/termsandconditions" >Terms & Conditions</Link>
                         </li>
                         <li class="mb-2">
-                            <Link style={{color: '#a7a7a7', textDecoration: 'none'}} to="/" >Finacial Support</Link>
+                            <Link style={{color: '#a7a7a7', textDecoration: 'none'}} to="/financesupport" >Finacial Support</Link>
                         </li>
                         <li class="mb-2">
-                            <Link style={{color: '#a7a7a7', textDecoration: 'none'}} to="/" >Help & Support</Link>
+                            <Link style={{color: '#a7a7a7', textDecoration: 'none'}} to="/helpandsupport" >Help & Support</Link>
                         </li>
                         
                     </ul>
@@ -75,8 +78,8 @@ const Footer = () => {
                 <div class="py-4" style={{backgroundColor: 'rgb(26 26 26)'}}>
                 <div class="container">
                 <h5 class="fellowship" style={{color: '#fff'}}>Fellowship courses</h5>
-                    <div class="footer-text pb-4">
-                    <p style={{color: '#fff', fontSize: '14px'}}>Diabetes Mellitus with Contact Program | Critical Care Medicine with Contact Program | Family
+                    <div class="prefooter footer-text pb-4">
+                    <p style={{color: '#fff', fontSize: '14px'}}>Diabetes Mellitus with Contact Program |   Critical Care Medicine with Contact Program | Family
                         Medicine with Contact Program | Clinical Cardiology with Contact Program | Internal Medicine
                         with Contact Progra | 2D Echocardiography with Contact Program | Endodontics with Contact
                         Program | Obs and Gynec with Contact Program | Embryology with Contact Program | Pediatrics with

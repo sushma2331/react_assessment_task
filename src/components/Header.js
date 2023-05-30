@@ -70,59 +70,44 @@ function Header() {
                             <div className='row'>
 
                                 <div className='col-12 col-lg-4 col-md-12'>
-                                <NavDropdown.Item href="#">Cardiology</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#">
-                                Critical Care
-                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/cardiology">Cardiology</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#">
-                                Dentistry
-                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/criticalcare">Critical Care</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#action4">
-                                Diabetes Mellitus
-                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/dentistry">Dentistry</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#action4">
-                                Emergency Medicine
-                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/diabetesmellitus">Diabetes Mellitus</NavDropdown.Item>
+
+                                <NavDropdown.Item href="/emergencymedicine">Emergency Medicine</NavDropdown.Item>
 
                                 </div>
                                 <div className='col-12 col-lg-4 col-md-12'>
-                                <NavDropdown.Item href="#action3">Epidemiology</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#action4">
-                                Gastroenterology
-                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/epidemiology">Epidemiology</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#action3">Obstetrics</NavDropdown.Item>
+                                <NavDropdown.Item href="/gastroenterology"> Gastroenterology</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#action4">
+                                <NavDropdown.Item href="/obstetrics">Obstetrics</NavDropdown.Item>
 
-                                Imaging
-                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/imaging"> Imaging </NavDropdown.Item>
 
-                                <NavDropdown.Item href="#action3">Internal Medicine</NavDropdown.Item>
+                                <NavDropdown.Item href="/internalmedicine">Internal Medicine</NavDropdown.Item>
                                 
                                 </div>
 
 
                                 <div className='col-12 col-lg-4 col-md-12'>
-                                <NavDropdown.Item href="#action3">Management</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#action4">
-                                Mental Health
-                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/management">Management</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#action3">Nephrology</NavDropdown.Item>
+                                <NavDropdown.Item href="/mentalhealth">  Mental Health</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#action4">
+                                <NavDropdown.Item href="/nephrology">Nephrology</NavDropdown.Item>
 
-                                Nursing
-                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/nursing">  Nursing</NavDropdown.Item>
 
-                                <NavDropdown.Item href="#action3">Oncology</NavDropdown.Item>
+                                <NavDropdown.Item href="/oncology">Oncology</NavDropdown.Item>
                                 
                                 </div>
                             </div>
@@ -135,8 +120,7 @@ function Header() {
                         </Nav>
 
                         <div className="d-flex align-items-lg-center cursor-pointer search_header">
-                            <Link to='/search'>
-                            
+                            <Link to='/search'>                            
                                 <Search size={40} className='me-4 text-dark badge rounded-circle' style={{backgroundColor: '#e5e5e5', color: '#4c4740' }} />
                             </Link>
                         

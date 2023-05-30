@@ -20,7 +20,8 @@ const SignUpForm = (props) => {
         width: '100%',
         borderRadius: '25px',
         padding: '8px',
-        fontWeight: '600'
+        fontWeight: '600',
+       
     }
 
     const inputstyle = {
@@ -33,18 +34,18 @@ const SignUpForm = (props) => {
 
   return (
     <div>
-        <Button onClick={() => setModalShow(true)} variant="dark" className="rounded-pill bg-dark px-4 py-2 me-2 fw-bold">{props.signUP}</Button>
+        <Button onClick={() => setModalShow(true)} variant="dark" className="signupbtn rounded-pill bg-dark px-4 py-2 me-2 fw-bold">{props.signUP}</Button>
     
         <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-      show={modalShow}
-    onHide={() => setModalShow(false)}
-    >
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        >
    
-      <Modal.Body className="p-0">
+        <Modal.Body className="p-0">
             <div className='row align-items-center'>
                 <div className="col-12 col-lg-4 col-md-5 form-mobile-img">
                     <div className='form_img'>
@@ -64,6 +65,7 @@ const SignUpForm = (props) => {
                             <PhoneInput
                                 placeholder="Enter your mobile number"
                                 className='form-control'
+                                defaultCountry="IN"
                                 value={value}
                                 style={inputstyle}
                                 onChange={setValue}/>

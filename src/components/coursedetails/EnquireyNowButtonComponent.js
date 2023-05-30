@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import Select from 'react-select';
+import '../styles/Style.css'
 
 
 
@@ -52,85 +53,88 @@ const EnquireyNowButtonComponent = (props) => {
         margin: '0 auto',
         display: 'block',
         width: '190px',
-        height: '45px'
+        height: '42px'
     }
   return (
     <div>
-        <Button onClick={() => setSmShow(true)} style={style}>{props.text}</Button>
+      <Button className='enquiryButton' onClick={() => setSmShow(true)} style={style}>{props.text}</Button>
 
+     
         <Modal
-        // size="sm"
-        show={smShow}
-        onHide={() => setSmShow(false)}
-        centered
-        className="enquireyModal"
-      >
-        <Modal.Header closeButton className='border-0'>
-                <Modal.Title id="example-modal-sizes-title-sm">
-                    Enter your details here
-                </Modal.Title>
-             </Modal.Header>
-            <Modal.Body>
-                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                           
-                        <Form.Group className="mb-4" controlId="validationCustom01"> 
-                        <Form.Label>First Name</Form.Label>                         
-                            <Form.Control required style={inputstyle} type="firstname" placeholder="First Name" />
-                            <Form.Control.Feedback type="invalid">First name cannot be empty</Form.Control.Feedback>                       
-                        </Form.Group>
+          // size="sm"
+          show={smShow}
+          onHide={() => setSmShow(false)}
+          centered
+          className="enquireyModal"
+          
+        >
+          <Modal.Header closeButton className='border-0'>
+                  <Modal.Title id="example-modal-sizes-title-sm">
+                     <h6> Enter your details here</h6>
+                  </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                      <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                            
+                          <Form.Group className="mb-4" controlId="validationCustom01"> 
+                          <Form.Label>First Name</Form.Label>                         
+                              <Form.Control required style={inputstyle} type="firstname" placeholder="First Name" />
+                              <Form.Control.Feedback type="invalid">First name cannot be empty</Form.Control.Feedback>                       
+                          </Form.Group>
 
-                        <Form.Group className="mb-4" controlId="validationCustom02">       
-                        <Form.Label>Last Name</Form.Label>                   
-                            <Form.Control required style={inputstyle} type="lastname" placeholder="Last Name" />   
-                            <Form.Control.Feedback type="invalid">Last name cannot be empty</Form.Control.Feedback>                    
-                        </Form.Group>
+                          <Form.Group className="mb-4" controlId="validationCustom02">       
+                          <Form.Label>Last Name</Form.Label>                   
+                              <Form.Control required style={inputstyle} type="lastname" placeholder="Last Name" />   
+                              <Form.Control.Feedback type="invalid">Last name cannot be empty</Form.Control.Feedback>                    
+                          </Form.Group>
 
-                        <Form.Label>Email Id</Form.Label>
-                        <Form.Group className="mb-4" controlId="validationCustom03">                          
-                            <Form.Control required style={inputstyle} type="email" placeholder="Email Id" />   
-                            <Form.Control.Feedback type="invalid">Email cannot be empty</Form.Control.Feedback>                    
-                        </Form.Group>
-                     
+                          <Form.Label>Email Id</Form.Label>
+                          <Form.Group className="mb-4" controlId="validationCustom03">                          
+                              <Form.Control required style={inputstyle} type="email" placeholder="Email Id" />   
+                              <Form.Control.Feedback type="invalid">Email cannot be empty</Form.Control.Feedback>                    
+                          </Form.Group>
+                      
 
-                        <Form.Group className="mb-3" controlId="validationCustom04">
-                        <Form.Label  > Mobile Number</Form.Label>
-                           
-                            <PhoneInput
-                                placeholder="Enter your mobile number"
-                                className='form-control bg-grey'
-                                value={value}
-                                style={inputstyle}
+                          <Form.Group className="mb-3" controlId="validationCustom04">
+                          <Form.Label  > Mobile Number</Form.Label>
+                            
+                              <PhoneInput
+                                  placeholder="Enter your mobile number"
+                                  className='form-control bg-grey'
+                                  value={value}
+                                  style={inputstyle}
+                                  
+                                  onChange={setValue}/>
                                 
-                                onChange={setValue}/>
-                               
-                           
                             
-                               <Form.Control.Feedback type="invalid">Enter mobile no</Form.Control.Feedback>
-                            </Form.Group>
+                              
+                                <Form.Control.Feedback type="invalid">Enter mobile no</Form.Control.Feedback>
+                              </Form.Group>
 
-                            <Form.Group className="mb-4" controlId="validationCustom05">                          
-                           <Form.Label  required>Qualification</Form.Label>
-                           <Select
-                                style={{ backgroundColor: '#f8f8f8'}}
-                               defaultValue={selectedOption}
-                               onChange={setSelectedOption}
-                               options={options}
-                           />                      
-                       </Form.Group>
+                              <Form.Group className="mb-4" controlId="validationCustom05">                          
+                            <Form.Label  required>Qualification</Form.Label>
+                            <Select
+                                  style={{ backgroundColor: '#f8f8f8'}}
+                                defaultValue={selectedOption}
+                                onChange={setSelectedOption}
+                                options={options}
+                            />                      
+                        </Form.Group>
 
-                            <Form.Group className="mb-4 " controlId="formBasicCheckbox">
-                                <Form.Check style={{marginLeft: '10px', fontSize:'14px'}} type="checkbox" label="Accept to receive promotional message and newsletter from Medvarsity" />
-                            </Form.Group>
+                              <Form.Group className="mb-4 " controlId="formBasicCheckbox">
+                                  <Form.Check style={{marginLeft: '10px', fontSize:'14px'}} type="checkbox" label="Accept to receive promotional message and newsletter from Medvarsity" />
+                              </Form.Group>
 
-                            
-                            <Button type="submit" className="btn" style={style}>
-                                Send
-                            </Button>
+                              
+                              <Button type="submit" className="btn" style={style}>
+                                  Send
+                              </Button>
 
-                            
-                            </Form>
-        </Modal.Body>
-      </Modal>
+                              
+                              </Form>
+          </Modal.Body>
+        </Modal>
+    
     </div>
   )
 }

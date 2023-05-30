@@ -64,15 +64,18 @@ const CourseaContent = () => {
             </div>
 
             {/* Enquire Now */}
-            <div>
+            {/* <div>
                 <CourseEnquireyComponent />
-            </div>
+            </div> */}
 
         </div>
         <div className='col-12 col-md-6 col-lg-3 p-md-0 p-2'>
 
-                <VideoComponent />
+            <VideoComponent />
 
+        </div>
+        <div>
+            <CourseEnquireyComponent />
         </div>
 
         

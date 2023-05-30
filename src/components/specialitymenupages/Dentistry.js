@@ -1,14 +1,15 @@
 import React from 'react'
-import WebPage from './WebPage';
-import BackButtonComponent from './coursedetails/BackButtonComponent';
+import BackButtonComponent from '../coursedetails/BackButtonComponent';
+import WebPage from '../WebPage';
 
-const Books = () => {
+const Dentistry = () => {
   return (
+
     <WebPage>
     <div className='container py-5'>  
     <div className='d-flex align-items-center'>
           <BackButtonComponent />
-      <h2 className='mb-0'>Books and Journals</h2>
+      <h2 className='mb-0'>Dentistry</h2>
     </div>
     </div>
 
@@ -16,4 +17,4 @@ const Books = () => {
   )
 }
 
-export default Books
+export default Dentistry

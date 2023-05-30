@@ -55,14 +55,67 @@
     }
 }
 
+
+/* enquirey */
+
 .enquireyModal .modal-content{
     width: 70%;
     margin: 0 auto;
+    height: 600px;
+    overflow-y: scroll;
     padding: 12px;
     @media all and (max-width: 500px){
         width: 100%;
     }
+   
 }
+
+.enquiryButton{
+    @media all and (max-width: 500px){
+        width: 100%;
+    }
+}
+.bookmarkimg{
+    width: 100%;
+    cursor: pointer;
+}
+.enquireycomponent .bookmarkimg{
+    width: 100%;
+    @media all and (max-width: 500px){
+        width: 70%;
+        padding-left: 10px
+    }
+}
+
+.enquireycomponent .loginbtn{
+    width: 95%;
+    
+    @media all and (max-width: 500px){
+        width: 53%;
+        margin: 10px 0;
+    }
+}
+
+.mobilebmdiv{
+    width: 4%;
+    display: block;
+    @media all and (max-width: 500px){
+        display: none;
+    }
+ 
+}
+.mobileinviteicondiv{
+    width: 25%;   
+    display: block;
+    @media all and (max-width: 500px){
+        display: none;
+    }
+}
+
+
+
+
+
 .form-control:focus{
     box-shadow: none;
 }
@@ -129,3 +182,36 @@
       } 
   }
   
+  .prefooter{
+    min-height: 170px;
+    @media all and (max-width: 500px){
+        min-height: 200px;
+    }
+  }
+
+  .stickyFooter{
+    background-color: #1b2f3f;
+    padding: 10px;
+    color: '#fff'
+  }
+  .connectImg{
+    width: 60px;
+    @media all and (max-width: 500px){
+        width: 30px;
+    }
+  }
+  .connect{
+    color: #fff;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    @media all and (max-width: 500px){
+        margin-left: 1rem;
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+  }
+
+
+
+ 
