@@ -29,7 +29,7 @@ const Home = () => {
                         <KeyFeatures />
                         <DescriptionCard />
                        
-                        <h1>ciriculum</h1>
+                        {/* <h1>ciriculum</h1> */}
                         <VerticalStepBar />
 
                         <FaqComponent />
