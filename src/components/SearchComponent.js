@@ -53,12 +53,12 @@ export const SearchComponent = () => {
     
     <WebPage>
         <div className='container py-5'>            
-        <div class="row height d-flex">
-          <div class="col-3 col-md-2 col-lg-1 mb-3 mb-md-0">           
+        <div class="row height d-flex align-items-center">
+          <div class="col-3 col-md-2 col-lg-1 mb-4">           
               <BackButtonComponent />            
           </div>
 
-          <div class="col-md-7">
+          <div class="col-12 col-md-9 col-lg-7">
 
             <div class="search">
             <i class="bi bi-search"></i>
@@ -69,7 +69,7 @@ export const SearchComponent = () => {
               onKeyPress={handleInputKeyPress}
               type="text"              
               class="form-control"
-               placeholder="Search courses Eg: Diabetes, Endodontics... " />
+               placeholder="Search courses Eg: Diabetes.. " />
 
               <Button onClick={handleSearch} class="btn">Search</Button>
             </div>

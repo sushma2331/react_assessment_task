@@ -1,11 +1,13 @@
 import React, { useState, useRef } from 'react';
 import '../styles/Video.css';
 
-const VideoComponent = () => {
+const VideoComponent = (props) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   const playImg = 'https://img.freepik.com/premium-vector/play-button-icon-symbol-transparent-background-video-audio-player-vector-illustration_350225-118.jpg'
+
+
 
   const handlePlayPause = () => {
     const video = videoRef.current;
@@ -48,7 +50,7 @@ const iconStyle = {
   return (
     <div className="video-container" style={divStyle}>
       <video ref={videoRef} className="background-video" loop >
-        <source src="https://media.exper.com/exper-content-temp/200.mp4" type="video/mp4"  />
+        <source src={props.videoURL} type="video/mp4"  />
         {/* Add additional source tags for different video formats */}
       </video>
       <div className="video-overlay" >

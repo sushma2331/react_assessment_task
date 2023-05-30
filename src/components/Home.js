@@ -19,7 +19,7 @@ const Home = () => {
                 {/* <InviteModal /> */}
                 {/* course details div */}
                 <div>
-                    <CourseaContent />              
+                    <CourseaContent courseTitle={'Clinical Preventive and Noninvasive Cardiology'}  description={'This course will help to improve the care delivered not only in the ICU but also to critically ill patients in other areas such as the emergency room, postoperative care unit, and disaster settings.Clinical Preventive and Noninvasive Cardiology'} CourseStartdate={'29 May 2023'} CoursePrice={'₹16,717'} />              
                 </div>
 
 
