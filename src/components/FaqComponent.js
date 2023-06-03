@@ -8,7 +8,7 @@ const FaqComponent = () => {
   return (
     <div className='container p-0'>
       <div className='faq_container bg-white p-4 p-sm-3 border-primary ' style={{ margin: '20px auto',
-    borderRadius:' 25px'}}>
+    borderRadius:' 25px'}}> 
       
         <h5 className='text-center mb-5'>FAQs</h5>
       
